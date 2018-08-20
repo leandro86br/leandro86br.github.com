@@ -123,10 +123,10 @@ a:hover { color: #252525; text-decoration: none }
     .portfolio__photo--bg-left { left: -400px; }
     .portfolio__photo--bg-right { right: -400px; }
 
-    .portfolio__photo--bg-erovitor { background: url(../img/photos/erovitor.jpg); }
-    .portfolio__photo--bg-quivagas { background: url(../img/photos/quivagas.jpg); }
-    .portfolio__photo--bg-psicologia { background: url(../img/photos/psicologia.jpg); }
-    .portfolio__photo--bg-bigcoffee { background: url(../img/photos/bigcoffee.jpg); }
+    .portfolio__photo--bg-erovitor { background: url(../img/bg/erovitor.jpg); }
+    .portfolio__photo--bg-quivagas { background: url(../img/bg/quivagas.jpg); }
+    .portfolio__photo--bg-psicologia { background: url(../img/bg/psicologia.jpg); }
+    .portfolio__photo--bg-bigcoffee { background: url(../img/bg/bigcoffee.jpg); }
     
 }
 
