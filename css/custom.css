@@ -1,0 +1,159 @@
+/*
+    Author: Leandro.Zambelli@yahoo.com
+    2018
+*/
+
+/*@import url(https://fonts.googleapis.com/css?family=Poppins:300,700);*/
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,400);
+
+html, body { height: 100%; }
+
+body { overflow-x: hidden;  font-family: 'Nunito', serif; }
+
+
+/* =Bootstrap Reset 
+*/
+
+.container-fluid { padding: 0 60px; max-width: 2200px }
+
+@media (max-width:767px) {
+    .container-fluid { padding: 0 20px; max-width: 2200px }
+}
+
+.btn-sm { padding: 0 7px 5px 7px; font-size: 2em; font-weight: 900; border-radius: 500px; }
+.btn-dark { background: #212121; }
+
+
+
+/* =animation
+*/
+
+.animated { animation-duration: 1s; animation-fill-mode: both; }
+.fadeIn { animation-name: fadeIn; }
+.a-designer { animation-delay: 0.1s}
+.or { animation-delay: 0.6s}
+.something { animation-delay: 1s}
+.like { animation-delay: 1.4s}
+.that { animation-delay: 1.8s}
+/*.btn-scroll { animation-delay: 2.2s }
+
+*/
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+/* Helper - Utilities
+*/ 
+
+.bg-gradient { background: linear-gradient(145deg, #fff, rgba(0,0,0,0) ); height: 100%; } /* used in the banner */
+
+.icon { position: relative; top:-2px; left: 4px }
+
+@media (max-width:767px) { 
+    .order-to-last { order: 2; }
+}
+
+
+/* Layout
+*/
+
+@media (min-width:1050px) {
+    .l-hero { height: 100vh; min-height: 100% } /* used in banner section only */
+}
+
+
+/* =Typography
+*/
+
+h1,h2,h3,h4,h5,h6 { font-weight: 700 }
+
+p { font-size: 1.35em; font-weight: 300 }
+
+a { color: #f14d4c; transition: 0.2s ease;}
+a:hover { color: #252525; text-decoration: none }
+
+
+/* =Header
+*/
+
+.header__logo { position: absolute; top: 0px; left: 0; background: #212121; padding: 20px; position: fixed; z-index: 3; border-bottom-right-radius: 4px; transition: all linear .2s; }
+.header__logo img { transition: all linear .3s }
+.header__logo img:hover { transform: rotate(-360deg) }
+
+
+/* =Banner
+*/
+
+.banner__title h1 { font-size: 5em; font-weight: 300; line-height: 0.9em; letter-spacing: -2px; color: #212121; }
+.banner__button-scroll { position: absolute; bottom: 20px; left: 50%; margin-left: -10px }
+.banner--padding { padding-top: 38vh }
+.banner--bg { background: url(../img/bg/bg.jpg) center no-repeat; background-size: cover; background-attachment: fixed}
+.banner__title a { font-weight: 300; text-transform: capitalize; font-size: 1.6em; color: black}
+
+
+@media (max-width:767px) { 
+    .banner__title h1 { font-size: 4.4em; }
+    .banner--padding { padding-top: 180px }
+}
+
+
+/* =Portfolio
+*/
+
+.portfolio__item--padding { padding-top: 200px; padding-bottom: 200px; }
+
+.portfolio__title h2 { font-size: 1.7em; margin-bottom: 14px; }
+.portfolio__img { position: relative; top:-75px; z-index: 2 }
+.portfolio--padding { padding-top: 20% }
+
+
+@media (max-width:991px) {
+    
+    .portfolio__item--padding { padding-top: 60px; padding-bottom: 60px; }
+    .portfolio__img {  top: 0; }
+    
+}
+
+
+@media (min-width:991px) { 
+    
+    .portfolio__photo--bg { position: absolute; top: -94px; background-size: cover; width: 100%; height: 600px;  border-radius: 4px }
+    .portfolio__photo--bg-left { left: -400px; }
+    .portfolio__photo--bg-right { right: -400px; }
+
+    .portfolio__photo--bg-erovitor { background: url(../img/photos/erovitor.jpg); }
+    .portfolio__photo--bg-quivagas { background: url(../img/photos/quivagas.jpg); }
+    .portfolio__photo--bg-psicologia { background: url(../img/photos/psicologia.jpg); }
+    .portfolio__photo--bg-bigcoffee { background: url(../img/photos/bigcoffee.jpg); }
+    
+}
+
+
+/* =About
+*/
+
+.about__title { font-size: 4em; font-weight: 300; line-height: 0.8em; letter-spacing: -3px; }
+.about__subtitle { font-size: 1.6em; font-weight: 700; line-height: 1.2em; margin-bottom: 20px; }
+.about--padding { padding-top: 10%; padding-bottom: 10% }
+.about--bg { background: linear-gradient(-30deg, #e0e0e0, #fff) }
+
+@media (max-width:767px) { 
+    .about__title { font-size: 3.6em; }
+    .about__img img { width: 100%; height: auto; }
+}
+
+
+/* =Footer
+*/
+
+.footer__title { font-size: 5em; font-weight: 300; line-height: 0.9em; letter-spacing: -2px }
+.footer__nav a { font-size: 1.5em; font-weight: 300; color: #666; transition: all 0.2s ease;}
+.footer__nav a:hover, a:focus { color: #f14d4c; text-decoration: none;}
+.footer--padding { padding-top: 10%; padding-bottom: 10% }
+.footer--bg { background: #111 }
+
+@media (max-width:767px) { 
+    .footer__title { font-size: 3.6em }
+}

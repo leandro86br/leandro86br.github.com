@@ -1,0 +1,12 @@
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,600);
+@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+
+$font-poppins:   'Poppins', sans-serif
+$font-nunito:    'Nunito', sans-serif
+    
+$primary-color: #333
+
+body
+  font: 100% $font-stack
+  color: $primary-color
